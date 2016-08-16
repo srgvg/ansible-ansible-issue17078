@@ -1,11 +1,10 @@
 ---
-- hosts: nonexistent
-  gather_facts: false
+- hosts: localhost
   tasks:
-      - name: bla 
-        debug:
+  - name:
+    debug:
 
 - hosts: localhost
-  gather_facts: true
+  gather_facts: false
   roles:
     - role: joeri
